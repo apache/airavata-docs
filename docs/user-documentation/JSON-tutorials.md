@@ -2,13 +2,13 @@
 
 ###Introduction
 
-The Django portal for Apache Airavata middleware is new and caters to wider range of requirements from Gateways. <br>
+The Django portal for Apache Airavata middleware is new and caters to a wider range of requirements from Gateways. <br>
     
 One major requirement was more flexibility in application inputs. In the previous PGA, inputs were Integer, String, Number and URI. 
 User requirements were to have more options when adding these input types to their applications, such as option buttons, Cascading inputs, etc…
 
-In  Django in order to advance the input types JSON scripting is used. 
-When using JSON scripting, prior the developer/gateway admin need to add the component in to Django framework in order for it to work.
+In Django in order to advance the input types JSON scripting is used. 
+When using JSON scripting, prior the developer/gateway admin need to add the component into Django framework in order for it to work.
 
 ###String Input Validations
 
@@ -101,7 +101,7 @@ When using JSON scripting, prior the developer/gateway admin need to add the com
 
 ####Lists
 1. This is where the list is longer than 6 values. 
-2. A list longer than 6 values are two lengthy to display as option buttons. Users can use LOVs ( List of Values) if only a single value to be selected, and checkboxes if multiple values are required. 
+2. A list longer than 6 values are too lengthy to display as option buttons. Users can use LOVs ( List of Values) if only a single value to be selected, and checkboxes if multiple values are required. 
 
 ###Cascading Inputs
 1. Cascading inputs are child inputs based on a prior selection. 
@@ -162,8 +162,8 @@ When using JSON scripting, prior the developer/gateway admin need to add the com
 }
 ```
 
-###Dependant File Uploads
-1. Dependant input is a input that is dependant on certain option selected in a previous field. E.g.: If the option selected is ‘list-of-urls’ then show this field to upload a file.
+###Dependent File Uploads
+1. Dependent input is an input that is dependent on certain option selected in a previous field. E.g.: If the option selected is ‘list-of-urls’ then show this field to upload a file.
 2. If the selected option is ‘list-of-urls’ then the URI upload should be enabled.
 ```
 {

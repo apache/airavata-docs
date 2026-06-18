@@ -4,7 +4,7 @@
 1. <a href="#FAILED">Investigate FAILED experiments/jobs</a></br>
 2. <a href="#unavailable">Handling unavailable Compute Resources</a></br>
 3. <a href= "#GtwyAccessI">Managing User Accounts</a></br>
-4. <a href= "#GtwyAccessII">Changing roles are not providing proper access</a></br>
+4. <a href= "#GtwyAccessII">Changing roles is not providing proper access</a></br>
 5. <a href= "#Allocation">Community account ran out of SUs</a></br>
 6. <a href="#PrePostCommands">Add Pre and Post Job Commands for an Application</a></br>
 7. <a href="#SampleApp">Add Environment Variables for an Application Deployment</a></br>
@@ -25,13 +25,13 @@ OR
         - Compute Resource <br>
 4. You could also use pre-defined selection criteria ('Get Experiments from Last 24 Hours' OR 'Get Experiments from Last Week')<br/>
 5. Once the experiment/s listed click on the 'Check Stats'
-6. Experiment task breakdown is listed and as the admin you could locate which task failed. Advice the gateway user accordingly.
+6. Experiment task breakdown is listed and as the admin you could locate which task failed. Advise the gateway user accordingly.
 
 <b class="blue" id="unavailable">Q2.</b> One of the resources used by my gateway is not available for the day. How to stop user job submissions?
 <br><b class="blue">Answer:</b> To temporarily stop users submitting jobs to a particular resource...<br>
 1. Navigate to AdminDashboard &#8658; Compute Resources (Browse)<br>
 2. Un-check the  'Enabled' box for the specific resource. This disables job submissions for the resource<br>
-3. To enable job submission simply check the box and you are back in track!<br>
+3. To enable job submission simply check the box and you are back on track!<br>
 NOTE: In order to enable disable resources you require super admin rights to the gateway. If not you need to contact SciGaP admins.
 
 <b class="blue" id="GtwyAccessI">Q3.</b> How to upgrade access for a gateway user?
@@ -39,13 +39,13 @@ NOTE: In order to enable disable resources you require super admin rights to the
 1. Navigate to Admin Dashboard &#8658; Users (Browse)<br>
 2. Search for the specific user and click 'Check All Roles'<br>
 3. From this you can remove/add roles.<br>
-4. For each modification user will receive an email with 'Your Privileges has Changed!'<br>
+4. For each modification user will receive an email with 'Your Privileges Have Changed!'<br>
 
 <b class="blue" id="GtwyAccessII">Q4.</b> Gateway users who has role 'gateway-user' cannot access experiment creation. Seems like privileges are not accessible.!
 <br><b class="blue">Answer:</b> User roles are given through PGA Admin Dashboard. If the roles are set correctly then check pga_config.php<br>
 1. To check the config file use
 <pre><code>vi /var/www/html/airavata-php-gateway/app/config/pga_config.php</code></pre>
-2. Roles attached to users should exists in the config file against correct role attribute type
+2. Roles attached to users should exist in the config file against correct role attribute type
 <pre><code>
         /**
          * Admin Role Name
@@ -63,7 +63,7 @@ NOTE: In order to enable disable resources you require super admin rights to the
 
 NOTE: In order to view and change config file you require access to PGA backend. If not you need to contact SciGaP admins.
 
-<b class="blue" id="Allocation">Q5.</b> I have ran out of allocation for my current community account used in gateway for a resource. What should I do?
+<b class="blue" id="Allocation">Q5.</b> I have run out of allocation for my current community account used in gateway for a resource. What should I do?
 <br><b class="blue">Answer:</b><br> 
 1. If you have another community account you could update the information in Admin Dashboard &#8658; Gateway Profile under Compute Resource Preferences.<br>
 2. Select the resource and modify account information and save.<br>
@@ -75,7 +75,7 @@ NOTE: In order to view and change config file you require access to PGA backend.
 2. Use 'Create a New Notice' button add a new notice. <br>
 3. Based on the published date you provided it will be available for users as a Notice !
 
-<b class="blue">Q7.</b> How to open the gateway to any user who create an user account? In the gateway not required to enable/activate user accounts.
+<b class="blue">Q7.</b> How to open the gateway to any user who create a user account? In the gateway not required to enable/activate user accounts.
 <br><b class="blue">Answer:</b><br>
 1. Gateway admin can switch between options of opening the gateway to all account creations OR gateway admin to activate accounts after creation.<br>
 2. In order to do open the gateway to all,<br>
@@ -91,7 +91,7 @@ NOTE: In order to view and change config file you require access to PGA backend.
                 'initial-role-name' => 'gateway-user',
         </code></pre>
         
-<b class="blue">Q7.</b> I want my gateway users to use their own compute resource allocation to submit jobs through the gateway. How to do this?
+<b class="blue">Q8.</b> I want my gateway users to use their own compute resource allocation to submit jobs through the gateway. How to do this?
 <br><b class="blue">Answer:</b><br>
 1. Users can add their own allocation account details. <br>
 2. In order to do so first login to the gateway.<br>

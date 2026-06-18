@@ -4,7 +4,7 @@
 - Primarily focused on submitting and managing application executions and workflows in grid based systems.
 - Architecturally extensible to support other underlying resources.
 - Used by scientific gateway developers as their middleware layer. They can directly call Airavata API in order to communicate with grid based system.
-- Provides a desktop tools and browser-based web interface components for managing applications, workflows and generated data.
+- Provides desktop tools and browser-based web interface components for managing applications, workflows and generated data.
 - Contains sophisticated server-side tools for registering and managing scientific applications on computational resources.
 - The Django portal provides tools and methods to easily integrate with post processing applications and application centric interfaces.
 

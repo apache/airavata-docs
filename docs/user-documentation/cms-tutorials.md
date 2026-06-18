@@ -1,11 +1,11 @@
 ## Django Gateway Theme Management
-In Django portal, the gateway branding or the theme is managed through a CMS. The Djangop portal uses WagTail CMS for the theme.<br>
-The CMS takes care fo the gateway home page, child pages content. <br>
+In Django portal, the gateway branding or the theme is managed through a CMS. The Django portal uses WagTail CMS for the theme.<br>
+The CMS takes care of the gateway home page, child pages content. <br>
 Gateways are initially deployed with a common base theme, but the gateway admins can re-brand according to their needs.<br>
 In order to change the theme user needs to be in the Admin group.<br>
 
 ### Instructions on Gateway Theme
-NOTE: For details instructions please refer <a href="https://github.com/apache/airavata-django-portal/blob/master/docs/cms.md" target="_blank"> Github CMS Instructions</a>
+NOTE: For detailed instructions please refer <a href="https://github.com/apache/airavata-django-portal/blob/master/docs/cms.md" target="_blank"> Github CMS Instructions</a>
 
 1. Login to your gateway portal.
 ![Screenshot](../img/login-page.png) <br></br>
@@ -16,7 +16,7 @@ NOTE: For details instructions please refer <a href="https://github.com/apache/a
 3. Click on the Wagtail icon → Go to Wagtail Admin
 ![Screenshot](../img/home-page2.png)<br></br>
 
-4. You are no in Wagtail CMS
+4. You are now in Wagtail CMS
 ![Screenshot](../img/wagtail-home.png)<br></br>
 
 5. To create a new child page or to edit the existing Home page, navigate to Pages, on left.
