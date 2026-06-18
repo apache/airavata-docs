@@ -6,7 +6,7 @@
 		- registry.jdbc.url=jdbc:mysql://localhost:3306/experiment_catalog (replace 'localhost' with correct server name if the DB is in a different server)
 		- registry.jdbc.user=airavata
 		- registry.jdbc.password=airavata
-		- enable.sharing=true (This will set sharing within the gateway to be enabled. This is the advices mode)
+		- enable.sharing=true (This will set sharing within the gateway to be enabled. This is the advised mode)
 		- default.registry.gateway=php_reference_gateway (Give the gateway name you prefer. Default exists in the file)
 		- super.tenant.gatewayId=php_reference_gateway (Since you are hosting your own gateway this is the ID of your own gateway)
 2.  Application Catalog DB Configuration
@@ -76,8 +76,8 @@
 		- Make sure the RabbitMQ server is running. For production use <pre><code>rabbitmq-server -detached</code></pre> to start.
 		- Create a virtual-host and user with a password. Follow documentation in <a href="http://blog.dtzq.com/2012/06/rabbitmq-users-and-virtual-hosts.html" target="_blank">RabbitMQ Users & VirtualHost</a>
 		- To create a user; <pre><code>rabbitmqctl add_user Username Password</code></pre>
-		- To create a vitrual-host <pre><code>rabbitmqctl add_vhost vhostauthvhost</code></pre>
-		- Provide permission to created 'Username'  to the created vhost <pre><code>rabbitmqctl set_permissions -p messaging airavata ".*" ".*" ".*”</code></pre>
+		- To create a virtual-host <pre><code>rabbitmqctl add_vhost vhostauthvhost</code></pre>
+		- Provide permission to the created 'Username'  to the created vhost <pre><code>rabbitmqctl set_permissions -p messaging airavata ".*" ".*" ".*”</code></pre>
 		- Uncomment rabbitmq.broker.url=amqp://Username:Password@localhost:5672/Vhost. Add the created username, password and Vhost in the URL.
 		- If you need to stop RabbitMQ use <pre><code>rabbitmqctl stop</code></pre>
 		- If the RabbitMQ server stopped then the above user creation, vhost creation and permission granting commands need to run again after restarting the servers.
